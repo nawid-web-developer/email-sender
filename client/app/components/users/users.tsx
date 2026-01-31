@@ -41,16 +41,12 @@ export default function UserData() {
   }, []);
 
   return (
-    <div>
-      <h1>Users List</h1>
+    <div className="text-white p-4">
+      <h1 className="text-xl py-6">Users List</h1>
       {data.map((user) => (
         <div
           key={user.id}
-          style={{
-            border: "1px solid #ccc",
-            padding: "10px",
-            marginBottom: "10px",
-          }}>
+          className="border border-gray-400 rounded-lg p-4 mb-4">
           <h2>
             {user.name} ({user.username})
           </h2>
